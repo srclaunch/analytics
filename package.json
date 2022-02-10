@@ -18,6 +18,7 @@
   "scripts": {
     "clean": "rm -fr dist && mkdir ./dist",
     "build": "yarn clean && tsc",
+    "push": "git push --follow-tags origin main",
     "release": "standard-version && git push --follow-tags origin main",
     "test": "ava"
   },
